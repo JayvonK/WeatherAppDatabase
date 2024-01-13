@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace WeatherAppDatabase.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class FavoriteCitiesController : ControllerBase
     {
         
