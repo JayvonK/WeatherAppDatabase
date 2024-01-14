@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace WeatherAppDatabase.Services;
 
-namespace WeatherAppDatabase.Services
+public class FavoritesService : IFavoritesService
 {
-    public class FavoritesService
+    public string FavCity(string city)
     {
-        
+        throw new NotImplementedException();
     }
 }
