@@ -17,4 +17,9 @@ namespace WeatherAppDatabase.Controllers;
     [HttpGet]
     [Route("AddCityName/{city}")]
 
+    public string AddFavCity(string city)
+    {
+        
+    }
+
     }
