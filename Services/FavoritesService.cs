@@ -19,7 +19,7 @@ public class FavoritesService : IFavoritesService
         return _data.Favorites.ToList();
     }
 
-    public string AddFavCity(string city)
+    public List<Favorites> AddFavCity(string city)
     {
         Favorites fav = new();
         fav.City = city;
@@ -27,7 +27,7 @@ public class FavoritesService : IFavoritesService
         _data.Add(fav);
         _data.SaveChanges();
 
-        return _data.Favorites.ToQueryString();
+        return _data.Favorites.ToList();
     }
 
     public List<Favorites> DeleteFavCity(string city)
