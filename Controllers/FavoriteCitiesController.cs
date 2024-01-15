@@ -19,7 +19,7 @@ namespace WeatherAppDatabase.Controllers;
 
     public string AddFavCity(string city)
     {
-        
+        return _favoritesService.AddFavCity(city);
     }
 
     }
