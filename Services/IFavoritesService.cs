@@ -6,7 +6,7 @@ namespace WeatherAppDatabase.Services;
     {
         List<Favorites> GetFavorites();
 
-        List<Favorites> AddFavCity(string city);
+        string AddFavCity(string city);
 
         List<Favorites> DeleteFavCity(string city);
     }
