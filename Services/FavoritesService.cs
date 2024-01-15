@@ -14,10 +14,13 @@ public class FavoritesService : IFavoritesService
         _data = data;
     }
 
+    public List<Favorites> GetFavorites()
+    {
+        return _data.Favorites.ToList();
+    }
+
     public string AddFavCity(string city)
     {
-        
-
         Favorites fav = new();
         fav.City = city;
         
