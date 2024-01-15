@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using WeatherAppDatabase.Models;
 using WeatherAppDatabase.Services;
 
 namespace WeatherAppDatabase.Controllers;
@@ -20,6 +21,11 @@ namespace WeatherAppDatabase.Controllers;
     public string AddFavCity(string city)
     {
         return _favoritesService.AddFavCity(city);
+    }
+
+    public List<Favorites> DeleteCity(string city)
+    {
+        
     }
 
     }
