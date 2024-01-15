@@ -1,4 +1,5 @@
 
+using Microsoft.EntityFrameworkCore;
 using WeatherAppDatabase.Data;
 using WeatherAppDatabase.Models;
 
@@ -21,7 +22,7 @@ public class FavoritesService : IFavoritesService
         _data.Add(fav);
         _data.SaveChanges();
 
-        return _data.Favorites.ToString();
+        return _data.Favorites.ToQueryString();
     }
 
     public List<Favorites> DeleteFavCity(string city)

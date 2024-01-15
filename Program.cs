@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WeatherAppDatabase.Data;
+using WeatherAppDatabase.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IFavoritesService, FavoritesService>();
 
 var app = builder.Build();
 
