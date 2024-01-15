@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using WeatherAppDatabase.Data;
 
 namespace WeatherAppDatabase.Controllers;
 
@@ -8,7 +9,7 @@ namespace WeatherAppDatabase.Controllers;
     {
         
 
-        public FavoriteCitiesController(Parameters)
+        public FavoriteCitiesController()
         {
             
         }
