@@ -15,6 +15,13 @@ namespace WeatherAppDatabase.Controllers;
         _favoritesService = favoritesService;
     }
 
+    [HttpGet]
+    [Route("GetFavorites")]
+    public List<Favorites> GetFavorites()
+    {
+        return _favoritesService.GetFavorites();
+    }
+
     [HttpPost]
     [Route("AddCity/{cityName}")]
 
