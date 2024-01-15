@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mzvm4knTVaJ1YMfUHedfjZ8o1YCFnLjs72axezA8l7g=",
+  "Source": "WeatherAppDatabase",
+  "BasePath": "_content/WeatherAppDatabase",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
