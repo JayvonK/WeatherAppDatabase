@@ -28,7 +28,7 @@ namespace WeatherAppDatabase.Controllers;
 
     public List<Favorites> DeleteCity(string cityName)
     {
-
+        return _favoritesService.DeleteFavCity(cityName);
     }
 
     }
