@@ -2,5 +2,7 @@ namespace WeatherAppDatabase.Services;
 
     public interface IFavoritesService
     {
-        string FavCity(string city);
+        string AddFavCity(string city);
+
+        string DeleteFavCity(string city);
     }
