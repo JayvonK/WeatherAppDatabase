@@ -26,7 +26,7 @@ namespace WeatherAppDatabase.Controllers;
     [HttpDelete]
     [Route("DeleteCity/{cityName}")]
 
-    public List<Favorites> DeleteCity(string city)
+    public List<Favorites> DeleteCity(string cityName)
     {
 
     }
