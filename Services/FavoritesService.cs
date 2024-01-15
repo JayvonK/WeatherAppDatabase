@@ -26,7 +26,14 @@ public class FavoritesService : IFavoritesService
 
     public List<Favorites> DeleteFavCity(string city)
     {
-        throw new NotImplementedException();
+        var existingCity = _data.Favorites.FirstOrDefault(cityName => cityName.City == city);
+
+        if(existingCity != null)
+        {
+            _data.Favorites.Remove(existingCity);
+            _data.SaveChanges();
+        }
+        return _data.Favorites.ToList();
     }
 
 }
