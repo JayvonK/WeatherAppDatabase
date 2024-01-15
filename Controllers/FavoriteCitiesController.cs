@@ -7,4 +7,9 @@ namespace WeatherAppDatabase.Controllers;
     public class FavoriteCitiesController : ControllerBase
     {
         
+
+        public FavoriteCitiesController(Parameters)
+        {
+            
+        }
     }
