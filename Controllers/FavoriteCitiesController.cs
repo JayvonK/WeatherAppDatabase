@@ -23,9 +23,12 @@ namespace WeatherAppDatabase.Controllers;
         return _favoritesService.AddFavCity(city);
     }
 
+    [HttpDelete]
+    [Route("")]
+
     public List<Favorites> DeleteCity(string city)
     {
-        
+
     }
 
     }
