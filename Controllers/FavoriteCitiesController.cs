@@ -15,7 +15,7 @@ namespace WeatherAppDatabase.Controllers;
         _favoritesService = favoritesService;
     }
 
-    [HttpGet]
+    [HttpPost]
     [Route("AddCity/{cityName}")]
 
     public List<Favorites> AddFavCity(string cityName)
