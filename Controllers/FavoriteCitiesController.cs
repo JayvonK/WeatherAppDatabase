@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WeatherAppDatabase.Data;
+using WeatherAppDatabase.Services;
 
 namespace WeatherAppDatabase.Controllers;
 
@@ -7,10 +8,10 @@ namespace WeatherAppDatabase.Controllers;
     [Route("[controller]")]
     public class FavoriteCitiesController : ControllerBase
     {
-        
+    private readonly IFavoritesService favoritesService;
 
-        public FavoriteCitiesController()
+    public FavoriteCitiesController(IFavoritesService favoritesService)
         {
-            
-        }
+        this.favoritesService = favoritesService;
+    }
     }
