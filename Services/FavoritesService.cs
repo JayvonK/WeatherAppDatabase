@@ -17,10 +17,14 @@ public class FavoritesService : IFavoritesService
     {
         Favorites fav = new();
         fav.City = city;
+        
+        _data.Add(fav);
+        _data.SaveChanges();
+
         return _data.Favorites.ToString();
     }
 
-    public string DeleteFavCity(string city)
+    public List<Favorites> DeleteFavCity(string city)
     {
         throw new NotImplementedException();
     }
