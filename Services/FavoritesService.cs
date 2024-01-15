@@ -16,6 +16,8 @@ public class FavoritesService : IFavoritesService
 
     public string AddFavCity(string city)
     {
+        
+
         Favorites fav = new();
         fav.City = city;
         
